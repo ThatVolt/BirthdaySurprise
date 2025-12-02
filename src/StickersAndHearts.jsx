@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 
+import helloKittyImage from '../public/hello_kitty.png';
+import calenderImage from '../public/calender.png';
+
 const STICKERS = [
   { className: "sticker-1", content: "🎀" },
-  { className: "sticker-2", content: "/hello_kitty.png", isImage: true }, 
+  { className: "sticker-2", content: helloKittyImage, isImage: true }, 
   { className: "sticker-3", content: "💕" },
   { className: "sticker-4", content: "🎀" },
   { className: "sticker-5", content: "🌸" },
   { className: "sticker-6", content: "✨" },
-  { className: "sticker-7", content: "/calender.png", isImage:true }, // NEW STICKER!
+  { className: "sticker-7", content: calenderImage, isImage:true }, // NEW STICKER!
 ];
 
 const StickersAndHearts = ({ triggerHearts }) => {

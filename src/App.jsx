@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import "./styles.css";
 import StickersAndHearts from "./StickersAndHearts.jsx";
 
+import photo1Image from '../public/photo1.png';
+import photo2Image from '../public/photo2.png';
+import photo3Image from '../public/photo3.png';
+import photo4Image from '../public/photo4.png';
+import photo5Image from '../public/photo5.png';
+import photo6Image from '../public/photo6.png';
+import photo7Image from '../public/photo7.png';
+import photo8Image from '../public/photo8.png';
+import photo9Image from '../public/photo9.png';
+
 const WISH_MESSAGES = [
   "🎉 You deserve the entire worlddd!! 🎉",
   "✨ May all your dreams come true! ✨",
@@ -12,44 +22,44 @@ const WISH_MESSAGES = [
 const MEMORIES = [
   {
     id: 1,
-    url: "/photo1.png",
+    url:photo1Image,
     caption: "Your cutieyyeee si pic of you when you were younger!🎀",
   },
   {
     id: 2,
-    url: "/photo2.png",
+    url: photo2Image,
     caption: "My favourite picture of you when you were younger!💕",
   },
-  { id: 3, url: "/photo3.png", caption: "Our favourite  picc !!❤️" },
+  { id: 3, url: photo3Image, caption: "Our favourite  picc !!❤️" },
   {
     id: 4,
-    url: "/photo4.png",
+    url: photo4Image,
     caption:
       "We spend more than 30mins together and i got 2 hairclips of you!✨",
   },
   {
     id: 5,
-    url: "/photo5.png",
+    url: photo5Image,
     caption: "The best time we had!😍",
   },
   {
     id: 6,
-    url: "/photo6.png",
+    url: photo6Image,
     caption: "Bro EID day! Holdingg your hand was the best!😊",
   },
   {
     id: 7,
-    url: "/photo7.png",
+    url: photo7Image,
     caption: "You are jussss soo soo soo pretyyyyyy!!💖",
   },
   {
     id: 8,
-    url: "/photo8.png",
+    url: photo8Image,
     caption: "Bro Corniche Date was so FUN!🥂",
   },
   {
     id: 9,
-    url: "/photo9.png",
+    url: photo9Image,
     caption:
       "Yourrr Eyessssss are soooooo beutifullll!! and perfectt mahn!!!🌸",
   },
@@ -171,8 +181,8 @@ const App = () => {
                       {memory.id === 5 && "💖"}
                       {memory.id === 6 && "😊"}
                       {memory.id === 7 && "🥂"}
-                      {memory.id === 8 && "🎉"}
-                      {memory.id === 9 && "🎉"}
+                      {memory.id === 8 && "😍"}
+                      {memory.id === 9 && "👀"}
                     </div>
 
                     {/* BACK FACE: The Image */}
