@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { clean } = require('gh-pages');
 
 module.exports = {
   // 1. Entry point: tell webpack where your application starts
@@ -9,7 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/' 
+    publicPath: '/BirthdaySurprise/',
+    clean: true,
   },
   
   // 3. Modules (rules for handling different file types)
