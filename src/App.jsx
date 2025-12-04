@@ -67,7 +67,7 @@ const MEMORIES = [
   {
     id: 10,
     url: photo10Image,
-    caption: "Special iPad-only memory just for you! 💝",
+    caption: "BROOROR THIISIS IS MY FAVV THE BACKGROUDUD OMGLS YOU LOOOK SOOO BEUAITFYUL!!💝",
     ipadOnly: true, // NEW FLAG
   },
 ];
