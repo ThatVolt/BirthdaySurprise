@@ -370,3 +370,14 @@ h1 {
     object-fit: cover;
     border-radius: 20px;
 }
+/* Hide iPad-only memory on all devices by default */
+.ipad-only-memory {
+    display: none;
+}
+
+/* Show only on iPad (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .ipad-only-memory {
+        display: flex;
+    }
+}

@@ -11,6 +11,7 @@ import photo6Image from '../public/photo6.png';
 import photo7Image from '../public/photo7.png';
 import photo8Image from '../public/photo8.png';
 import photo9Image from '../public/photo9.png';
+import photo10Image from '../public/photo10.png'; // NEW IMAGE
 
 const WISH_MESSAGES = [
   "🎉 You deserve the entire worlddd!! 🎉",
@@ -62,6 +63,12 @@ const MEMORIES = [
     url: photo9Image,
     caption:
       "Yourrr Eyessssss are soooooo beutifullll!! and perfectt mahn!!!🌸",
+  },
+  {
+    id: 10,
+    url: photo10Image,
+    caption: "Special iPad-only memory just for you! 💝",
+    ipadOnly: true, // NEW FLAG
   },
 ];
 
@@ -164,7 +171,10 @@ const App = () => {
           </h2>
           <div className="photos-grid">
             {MEMORIES.map((memory) => (
-              <div key={memory.id} className="flip-card-container">
+              <div 
+                key={memory.id} 
+                className={`flip-card-container ${memory.ipadOnly ? 'ipad-only-memory' : ''}`}
+              >
                 <div
                   className={`flip-card ${
                     flippedIds.includes(memory.id) ? "flipped" : ""
@@ -183,6 +193,7 @@ const App = () => {
                       {memory.id === 7 && "🥂"}
                       {memory.id === 8 && "😍"}
                       {memory.id === 9 && "👀"}
+                      {memory.id === 10 && "💝"}
                     </div>
 
                     {/* BACK FACE: The Image */}
